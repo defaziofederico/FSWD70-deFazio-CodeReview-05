@@ -4,48 +4,56 @@ var film = `[
                "id":"01",
                "FilmName": "Pulp Fiction",
                "Description": "Vincent Vega and Jules Winnfield are hitmen with a penchant for philosophical discussions. In this ultra-hip, multi-strand crime movie, their storyline is interwoven with those of their boss, gangster Marsellus Wallace; his actress wife, Mia ; master fixer      Winston Wolfe and a nervous pair of armed robbers,Pumpkin and Honey Bunny",
-               "img":"../img/pulp01.jpg"
+               "img":"../img/space03.jpg",
+               "likes":0
             },
             {
                "id":"02",
                "FilmName": "Fight Club",
                "Description": "A depressed man (Edward Norton) suffering from insomnia meets a strange soap salesman named Tyler Durden (Brad Pitt) and soon finds himself living in his squalid house after his perfect apartment is destroyed. The two bored men form an underground club",
-               "img":"../img/fclub02.jpg" 
+               "img":"../img/fclub02.jpg", 
+               "likes":0
             },
             {
                "id":"03",
                "FilmName": "Space Jam",
                "Description": "Swackhammer (Danny DeVito), an evil alien theme park owner, needs a new attraction at Moron Mountain. When his gang, the Nerdlucks, heads to Earth to kidnap Bugs Bunny (Billy West) and the Looney Tunes, Bugs challenges them to a basketball game to determine their fate. The aliens agree, but they steal the powers of NBA basketball players.",
-               "img":"../img/pulp01.jpg" 
+               "img":"../img/space03.jpg",
+               "likes":0 
             },
             {
                "id":"04",
                "FilmName": "Forrest Gump",
                "Description": "Slow-witted Forrest Gump (Tom Hanks) has never thought of himself as disadvantaged, and thanks to his supportive mother (Sally Field), he leads anything but a restricted life. Whether dominating on the gridiron as a college football star, fighting in Vietnam or captaining a shrimp boat, Forrest inspires people with his childlike optimism.",
-               "img":"../img/fg04.jpg" 
+               "img":"../img/fg04.jpg", 
+               "likes":0
             },
             {
                "id":"05",
                "FilmName": "Cuckoo's Nest",
                "Description": "When Randle Patrick McMurphy gets transferred for evaluation from a prison farm to a mental institution, he assumes it will be a less restrictive environment. But the martinet Nurse Ratched runs the psychiatric ward with an iron fist, keeping her patients cowed through abuse, medication and sessions of electroconvulsive therapy.",
-               "img":"../img/cuckoo05.jpg" 
+               "img":"../img/cuckoo05.jpg",
+               "likes":0 
             },
             {
                "id":"06",
                "FilmName": "La Grande Bellezza",
                "Description": "An ageing writer has spent many years seducing his way through the lavish nightlife of Rome for decades, but after his 65th birthday, he starts to look past the nightclubs and parties to find a landscape of exquisite beauty.",
-               "img":"../img/bellezza06.jpg" 
+               "img":"../img/bellezza06.jpg",
+               "likes":0 
             },
             {
                "id":"07",
                "FilmName": "The Last Samurai",
                "Description": "As the government attempts to eradicate the ancient Samurai warrior class in preparation for more Westernized and trade-friendly policies, Algren finds himself unexpectedly affected by his encounters with the Samurai, which places him at the center of a struggle between two eras and two worlds.",
-               "img":"../img/last07.jpg" 
+               "img":"../img/last07.jpg",
+               "likes":0 
             },
             {
                "id":"08",
                "FilmName": "The Silent Warrior",
                "Description": "Dan Millman (Scott Mechlowicz) is a gifted athlete whose desire for success drives everything he does. When a mysterious stranger (Nick Nolte) opens Dan's eyes to a new vision of strength and understanding, the Olympic hopeful finds that he still has much to learn and more sacrifices to make.",
-               "img":"../img/peace08.jpg" 
+               "img":"../img/peace08.jpg",
+               "likes":0 
             }
    ]`

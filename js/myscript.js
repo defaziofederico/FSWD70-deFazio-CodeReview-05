@@ -8,24 +8,22 @@ $(document).ready(function(){
 	var i;
 	for (i=0; i<movies.length; i++){
 		$(".insert-content").append(`
-			<div class="wrapper col-lg-6 col-md-12">
-				<div class="row h-100">
-					<div class="col-lg-6 col-md-12 text-white-50 bg-black text-justify a1">
-						<div>
-							<img src="${movies[i].img}" alt="">		
-						</div>
+			<div class="wrapper p-2 col-lg-6 bg-dark">
+				<div class="row h-100 no-gutters">
+					<div class="col-lg-6 bg-black image-container p-3 a1">
+						<img src="${movies[i].img}" alt="">		
 					</div>
 				
-					<div class="col-lg-6 col-md-12 d-flex flex-column text-grey bg-black text-justify h-100 a2">
+					<div class="text-container col-lg-6 d-flex flex-column text-white bg-black text-justify py-3 pr-3 a2">
 
 						<h2>${movies[i].FilmName}</h2>
-						<p>${movies[i].Description}</p>
+						<p class="overflow-auto">${movies[i].Description}</p>
 						<div class="container d-flex flex-grow-1 justify-content-end align-items-end a3">
 							<div class="col-md-6"> 
-								 <button class="like bg-success text-white mr-3">Like &#x1f44d;</button>
+								 <button id="like-click-${movies[i].id}" class="like bg-success text-white mr-3">Like &#x1f44d;</button>
 							</div>
 							<div class="circle rounded-circle bg-success">
-								<p></p>
+								<p id="like-output-${movies[i].id}" class="m-0">0</p>
 							</div>
 						</div>
 					</div>
@@ -33,6 +31,41 @@ $(document).ready(function(){
 			</div>
 
 		`);
+
+   }
+   $(".like").on("click",function(){
+   		for (i=0; i<movies.length; i++) {
+   			if ($(this).attr("id") == "like-click-" + movies[i].id) {
+   				movies[i].likes	+= 1;
+   			}
+   		$("#like-output-" + movies[i].id).text(movies[i].likes);
+   		}
+   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // --------------------------------------sort-----------------------------------
 	// $(".a1 .a2 .a3").on("change", function(){
@@ -44,10 +77,9 @@ $(document).ready(function(){
 	// 				$(`.${select}`).show();
 	
 // ----------------------------like--------------------------------------------
-							// 	function LikeMe() {
-							// 	document.getElementsByClassName("like")	
-							// 	var a=like
-							// 	console.log(i)
+// 								function LikeMe() {
+// 								var like=document.getElementsByClassName("like")	
+// 								console.log(i)
 
 							// 	yes.onclick = function(){
 							//     box.style.backgroundColor = "red";
@@ -71,7 +103,7 @@ $(document).ready(function(){
 							// }
 
 
-							// document.getElementsByClassName("like").onclick = LikeMe;
+							
 
 								// var val;
 							 //        $(document).ready(function () {
@@ -83,9 +115,12 @@ $(document).ready(function(){
 							 //          function get(){
 							 //            if (val == 1){
 							 //                alert(val);
-							 //                }
+							                // }
 
-							      }
+							   
+
+
+							      // document.getElementsByClassName("like").onclick = LikeMe;
  })
 
 
